@@ -98,8 +98,9 @@ names(Data_Completed) <- gsub("Mag", "Magnitude", names(Data_Completed))
 names(Data_Completed) <- gsub("^t", "Time", names(Data_Completed))
 names(Data_Completed) <- gsub("^f", "Frequency", names(Data_Completed))
 names(Data_Completed) <- gsub("-mean()", "Mean", names(Data_Completed))
-names(Data_Completed) <- gsub("-std()", "STD", names(Data_Completed))
+names(Data_Completed) <- gsub("-std()", "Std", names(Data_Completed))
 names(Data_Completed) <- gsub("-freq()", "Frequency", names(Data_Completed))
+names(Data_Completed) <- gsub("[-()]", "", names(Data_Completed))
 
 
 #Creates a summarized data set with the average of each variable for each activity and subject
