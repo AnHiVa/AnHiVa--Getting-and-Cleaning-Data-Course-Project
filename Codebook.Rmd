@@ -1,0 +1,47 @@
+---
+title: "Codebook"
+author: "AnHiVa"
+date: "27/6/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(pander)
+```
+
+# Variables
+
+The tidy data set contains 180 obs and 68 variables, its saved in ['text'](https://github.com/AnHiVa/AnHiVa--Getting-and-Cleaning-Data-Course-Project/blob/master/TIDY_HumanActivity.txt) and ['csv'](https://github.com/AnHiVa/AnHiVa--Getting-and-Cleaning-Data-Course-Project/blob/master/TIDY_HumanActivity.csv) file formats. 
+
+### Variable list
+
+- subject: ID of the subject tested (1:30) 
+- activity: Activity name (WALKING, SITTING, LAYING...)
+
+The rest of the variables are a combination of features:
+
+- Domain: Time or Frequency
+- Instrument: Accelerometer or Gyroscope
+- Acceleration: Body or Gravity
+- Magnitude
+- Jerk
+- Axis: X, Y or Z direction
+- Statistical measurement: Mean or Standard Deviation (STD)
+
+
+```{r variable names, echo=FALSE}
+Summarized_Data <- read_csv("TIDY_HumanActivity.csv", col_types = cols())
+Variables <- as_tibble(names(Summarized_Data))
+Variables <- rename(Variables, Variables = value)
+pander(Variables)
+```
+
+# Summaries calculated
+
+A 10 x 6 example is shown below
+
+```{r pressure, echo=FALSE}
+head(Summarized_Data, n = c(10,6))
+```
