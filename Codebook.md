@@ -2,9 +2,9 @@ Variables
 =========
 
 The tidy data set contains 180 obs and 68 variables, its saved in
-[‘text’](https://github.com/AnHiVa/AnHiVa--Getting-and-Cleaning-Data-Course-Project/blob/master/TIDY_HumanActivity.txt)
+[text](https://github.com/AnHiVa/AnHiVa--Getting-and-Cleaning-Data-Course-Project/blob/master/TIDY_HumanActivity.txt)
 and
-[‘csv’](https://github.com/AnHiVa/AnHiVa--Getting-and-Cleaning-Data-Course-Project/blob/master/TIDY_HumanActivity.csv)
+[csv](https://github.com/AnHiVa/AnHiVa--Getting-and-Cleaning-Data-Course-Project/blob/master/TIDY_HumanActivity.csv)
 file formats.
 
 ### Variable list
@@ -241,6 +241,9 @@ The rest of the variables are a combination of features:
 
 Summaries calculated
 ====================
+
+Data is grouped and summarized by the average of each variable for each
+activity and each subject
 
 A 10 x 5 example is shown below
 
