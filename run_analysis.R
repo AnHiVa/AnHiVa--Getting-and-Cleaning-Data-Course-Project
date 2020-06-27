@@ -111,3 +111,6 @@ Summarized_Data <- Data_Completed %>%
 #Cleans workspace leaving only the Tidy Data sets
 rm(list = setdiff(ls(),c("Data_Completed", "Summarized_Data")))
 
+#create Tidy data sets for Summarized Data
+write_csv(Summarized_Data, "TIDY_HumanActivity.csv")
+write.table(Summarized_Data, "TIDY_HumanActivity.txt", quote = FALSE, row.names = FALSE)
