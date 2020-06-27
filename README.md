@@ -19,3 +19,13 @@ You should create one R script called run_analysis.R that does the following.
 
 ## Overview of analysis
 
+- The data files are read, both for train and test.
+- Subset x tables (measuremnts) to include only the 'mean' and 'std' variables. 
+- Set variable names (not tidy names yet)
+- Subset y tables (activity), set the tidy names (activities (WALKING, STITTING...))
+- Subset subject tables, give a proper variable name (subject)
+- Merge training and testing tables. 
+- Give proper Tidy variable names, eliminating abreviations and symbols.
+- Group the data set by 'subject' and 'activity'.
+- Summarize the data set by the 'mean()' of all variables. 
+- Create '.txt' and '.csv' files
