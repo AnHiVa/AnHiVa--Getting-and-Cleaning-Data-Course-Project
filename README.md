@@ -27,5 +27,5 @@ You should create one R script called run_analysis.R that does the following.
 - Merge training and testing tables. 
 - Give proper Tidy variable names, eliminating abreviations and symbols.
 - Group the data set by `subject` and `activity`.
-- Summarize the data set by the 'mean()' of all variables. 
+- Summarize the data set by the `mean()` of all variables. 
 - Create `.txt` and `.csv` files
