@@ -2,7 +2,9 @@
 title: "Codebook"
 author: "AnHiVa"
 date: "27/6/2020"
-output: html_document
+output:
+  md_document:
+    variant: markdown_github
 ---
 
 ```{r setup, include=FALSE}
@@ -40,8 +42,8 @@ pander(Variables)
 
 # Summaries calculated
 
-A 10 x 6 example is shown below
+A 10 x 5 example is shown below
 
 ```{r pressure, echo=FALSE}
-head(Summarized_Data, n = c(10,6))
+head(Summarized_Data, n = c(10,5))
 ```
