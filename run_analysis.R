@@ -31,7 +31,6 @@ features <- read_table("./UCI HAR Dataset/features.txt", col_names = FALSE)
 
 #Get variable names in a vector       
         secondElement <- function(x){x[2]}
-        firstElement <- function(x){x[1]}
                 mean_variable.names <- sapply(mean_split, secondElement)
                 std_variable.names <- sapply(std_split, secondElement)
                 all_variable.names <- c(mean_variable.names,std_variable.names)
